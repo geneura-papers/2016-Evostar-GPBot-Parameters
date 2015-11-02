@@ -29,6 +29,8 @@
 \title{Tuning Planet Wars bots for the win}
 
 % Antonio - Un título muy 'tentativo'
+% El título mola. Pero podrías poner cómo lo haces: using no sé
+% qué. También en un issue. 
 
 % a short form should be given in case it is too long for the running head
 \titlerunning{Tuning Planet Wars bots}
@@ -63,6 +65,7 @@
 %
 \begin{abstract}
 The amazing abstract
+% This should go first.
 \keywords{Videogames, RTS, evolutionary algorithms, parameter tuning}
 \end{abstract}
 
@@ -76,7 +79,10 @@ The amazing abstract
 
 \section{Evolutionary algorithms in games}
 Real-Time Strategy games (RTS) are a sub-genre of strategy-based videogames in which each player controls a set of
-units and structures distributed in a playing area and players take actions in real time.
+units and structures distributed in a playing area and players take
+actions in real time. %Empezad por el problema, no el marco. Aparte de
+                      %que yo creo que esto lo hemos usado varias
+                      %veces - JJ
 In RTS games, the player is not required to wait for the results of the moves of the other players (as in turn-based games).
 Well known examples of this category of games are: Command and Conquer$^{TM}$, Starcraft$^{TM}$, Warcraft$^{TM}$ and
 Age of Empires$^{TM}$.
@@ -90,13 +96,20 @@ the time that each bot can use to make a decision and also by the huge search sp
 Evolutionary algorithms have been used in videogames~\cite{Hong05Evolving,Keaveney09Evolving,Jang09Optimal}.
 
 
-\section{Planet Wars}
-Planet Wars\footnote{http://planetwars.aichallenge.org/} is a simple Real Time Strategy (RTS) combat-based game.
-It was presented under the Google AI Challenge 2010 and has been used by several authors for the study of computational
+%\section{Planet Wars}
+% Mejor seguir la estructura clásica para las secciones.
+
+In this paper we will focus on one of those games, called Planet
+Wars\footnote{http://planetwars.aichallenge.org/}, % usa citas, no pies
+                                % de página - JJ
+ a simple Real Time Strategy (RTS) combat-based game that was
+ presented under the Google AI Challenge 2010 and has been used by
+ several authors for the study of computational 
 intelligence in RTS games. Its popularity arises in the fact that it is a simplification of typical RTS games that
-considers only one type of resource, one type of attack and one type of unit. \\
-Planet Wars is a strategy game set in outer space. The objective is to take over all the planets on the map,
-or alternatively eliminate all of your opponents ships. Figure~\ref{figplantetwars} shows a typical scenario of
+considers only one type of resource, one type of attack and a single
+unit type. Planet Wars is set in outer space and its objective is to
+take over all the planets on the map, 
+or alternatively eliminate all ships belonging to your opponents. Figure~\ref{figplantetwars} shows a typical scenario of
 a Planet Wars combat.
 \begin{figure}
  \centering
